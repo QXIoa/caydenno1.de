@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="5; url=https://caydenno1.de/dl/relax_its_minecraf.mp4">
+  <title>Redirecting...</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+  <h2 id="countdown">You will be redirected in 5 seconds</h2>
+  <button onclick="redir()">Click here to redirect now</button>
+  <script>
+    let gt = 5;
+    const dwerfsfewf = document.getElementById("countdown");
+    const time = setInterval(() => {
+      gt--;
+      if (gt > 0) {
+        dwerfsfewf.textContent = `You will be redirected in ${gt} second${gt===1?'':'s'}`;
+      } else {
+        dwerfsfewf.textContent = "Redirecting...";
+        clearInterval(time);
+      }
+    }, 1000);
+    function redir() {
+      window.location.href = "https://caydenno1.de/dl/relax_its_minecraf.mp4";
+    }
+  </script>
+</body>
+</html>
