@@ -28,10 +28,35 @@ body {
   border-radius: 5px;
   transition: 0.2s;
 }
+
+.updating-text-ig {
+  display:flex;
+  align-items: center;
+  gap: 10px;
+}
 </style>
+<script>
+  let state = false;
+
+  function toggle() {
+    state = state === false ? true : false;
+
+    switch (state) {
+      case true:
+        document.getElementById("i-dont-know-what-to-name-this").textContent = "hello! i love the Netherlands (tho i live in the U.S.)";
+        break
+      case false:
+        document.getElementById("i-dont-know-what-to-name-this").textContent = "halo! i hou van Nederland (hoewel ik in de V.s. woon)";
+        break
+    }
+  }
+  </script>
 </head>
 <body>
-<h3>halo! i hou van Nederland (hoewel ik in de V.s. woon)</h4>
+  <div class="updating-text-ig">
+    <h3 id="i-dont-know-what-to-name-this">halo! i hou van Nederland (hoewel ik in de V.s. woon)</h4> 
+    <button onclick="toggle()" style="width: 30px; height: 30px;">🔄</button>
+  </div>
 <h4>im Caydenn and i also own <a href="https://mathai.cloud">mathai.cloud</a> though i use it only for mail atm </h5>
 <h4>im also a former math tutor</h4>
 <h4>Places where this site is available:</h4>
