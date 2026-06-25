@@ -28,11 +28,64 @@ body {
   border-radius: 5px;
   transition: 0.2s;
 }
+
+.updating-text-ig {
+  display:flex;
+  align-items: center;
+  gap: 10px;
+}
 </style>
+<script>
+  let state = false;
+
+  function toggle() {
+    state = state === false ? true : false;
+
+    switch (state) {
+      case true:
+        document.getElementById("i-dont-know-what-to-name-this").textContent = "hello! i love the Netherlands (tho i live in the U.S.)";
+        break
+      case false:
+        document.getElementById("i-dont-know-what-to-name-this").textContent = "halo! ik hou van Nederland (hoewel ik in de V.s. woon)";
+        if (Math.random() < 0.001) document.getElementById("i-dont-know-what-to-name-this").textContent = "ich bin heidelberger";
+        break
+    }
+  }
+  </script>
 </head>
 <body>
-<h4>Had to take this down as I was being harassed at school due to other kids finding my site.</h4>
-<h4>Yes, thats you, <b>Aries</b>. And I really, really, despise you.</h4>
-<h5>This will return on June 25th (last day of school). See you then! :)</h5>
+  <div class="updating-text-ig">
+    <h3 id="i-dont-know-what-to-name-this">halo! ik hou van Nederland (hoewel ik in de V.s. woon)</h4> 
+    <button onclick="toggle()" style="width: 30px; height: 30px;">🔄</button>
+  </div>
+<h4>im Caydenn and i also own <a href="https://mathai.cloud">mathai.cloud</a> though i use it only for mail atm </h5>
+<h4>im also a former math tutor</h4>
+<h4>Places where this site is available:</h4>
+<h5><a href="https://caydenno1-de.xiacxiong69.workers.dev">caydenno1-de.xiacxiong69.workers.dev</a></h5>
+<h5><a href="https://caydenno1.de">caydenno1.de</a></h5>
+<h5><a href="https://qxioa.github.io/caydenno1.de">qxioa.github.io/caydenno1.de/</a></h5>
+<h6>They **should** be all automatically updated though.</h6>
+<br>
+
+<h6>My favorite books are 1-4 of The King in Yellow and [...].</h6>
+<h5>Some things I like I guess:</h5>
+<h6>Minecraft ARGs</h6>
+<h6>Cryptography (not the same as cryptocurrency)</h6>
+<h6>Musik</h6>
+<h6>Documentries (<a href="https://www.youtube.com/@fern-tv">ferntv</a>, <a href="https://www.youtube.com/@Crumb">Crumb</a>)</h6>
+<h6>Privacy and Anonymity (e.g. <a href="https://www.torproject.org/?noredirect=1">Tor Browser</a>), this is <a href="https://openssl.org">OpenSSL's Mission</a></h6>
+<h6>Networking (soon I will, possibly have my own ASN, though circumstances can change.)</h6>
+<br>
+  
+<h5>What I'm studying atm (I update this everytime I remember it lol):</h5>
+<h6><a href="https://nl.wikipedia.org/wiki/Filosofie">Philosophy></a></h6>
+<h6>Human Psychology (e.g. <a href="https://www.youtube.com/@Psych2go">Psych2Go</a>)</h6>
+<h6>Politics/Law</h6>
+<h6>Religion</h6>
+
+<div class="footer">
+ <a href="https://github.com/QXIoa/caydenno1.de">Source Code</a>
+ <a href="mailto:xiao@mathai.cloud">Email</a>
+</div>
 </body>
 </html>
