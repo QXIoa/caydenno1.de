@@ -1,4 +1,0 @@
-ID server: rd.mathai.cloud
-Relay server: rd.mathai.cloud
-API server: https://rd.mathai.cloud
-Key : 3L6566xbk2zvOlT2KhFZGeysjWKVcgjEkxDeFRHRlZs=
